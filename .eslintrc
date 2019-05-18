@@ -1,0 +1,36 @@
+{
+  "parser": "babel-eslint",
+  "extends": "react-app",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 9,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "emotion"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "semi": 0,
+    "no-unused-vars": 0,
+    "emotion/jsx-import": "error",
+    "emotion/no-vanilla": "error",
+    "emotion/import-from-emotion": "error",
+    "emotion/styled-import": "error",
+    "react/jsx-closing-bracket-location": [
+      1,
+      "after-props"
+    ]
+  }
+}
